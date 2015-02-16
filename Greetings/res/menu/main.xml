@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="greeting.yellow.gray.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/action_bar_categorie_icon"
+        android:title="@string/action_settings" 
+        android:enabled="true" 
+        android:visible="true"/>
+    
+    <item android:id="@+id/action_search"
+          android:title="@string/action_search"
+          android:icon="@drawable/abc_textfield_search_right_default_holo_dark"
+          android:showAsAction="always"
+          android:actionViewClass="android.widget.SearchView" android:visible="false" android:enabled="false"/>
+
+    
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BLACK"
+    >
+
+    <FrameLayout
+        android:id="@+id/picture_view_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/translucent_black" >
+        
+        <Button
+        android:id="@+id/btn_full_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/ic_menu_back"
+        android:shadowColor="#ff6d00"
+        android:shadowDx="55"
+        android:shadowDy="99"
+        android:shadowRadius="99" />
+
+    <Button
+        android:id="@+id/btn_full_view_Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:drawable/ic_menu_share"
+         />
+
+    <Button
+        android:id="@+id/btn_full_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="full"
+        android:layout_gravity="center_vertical" />
+
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/imageView_fullscr"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/picture_view_topbar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_loading_img"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="79dp" />
+    
+</RelativeLayout>

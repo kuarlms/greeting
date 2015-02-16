@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:weightSum="10" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_edge_update">
+
+        <WebView
+            android:id="@+id/webView_updates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar_webview"
+            android:layout_gravity="center_vertical|center_horizontal"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+       <FrameLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal|fill"
+        android:layout_marginBottom="1dp"
+        android:background="#86ad42" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3" >
+
+            <Button
+                style="@android:attr/borderlessButtonStyle"
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="33dp"
+                
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_ani_home" />
+
+            <Button
+                style="@android:attr/borderlessButtonStyle"
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1.5"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/btn_ani_gallery"/>
+
+            
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
